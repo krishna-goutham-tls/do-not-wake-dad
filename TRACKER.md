@@ -3,7 +3,7 @@
 ## Now
 - [ ] Play it on a real phone (Android and iPhone): landscape lock or rotate screen, touch hold, sound, 60 fps
 - [ ] Tune difficulty after real play: warn times, noise rates and star pars in `src/levels.ts`
-- [ ] Create the GitHub repo, then deploy as a static site
+- [ ] Deploy on Netlify (repo is pushed, `netlify.toml` is in place)
 
 ## Next
 - [ ] Better snore if the synth one is not funny on a phone speaker
