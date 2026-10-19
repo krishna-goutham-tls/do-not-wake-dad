@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#0d1024" />
+    <link rel="icon" href="/icon.svg" />
+    <title>Don't Wake Dad</title>
+  </head>
+  <body>
+    <div id="stage"></div>
+    <div id="bubbles"></div>
+
+    <div id="hud" class="hidden">
+      <div class="hud-left">
+        <button id="btn-menu" class="icon-btn" aria-label="Menu">☰</button>
+        <div class="level-label" id="level-label"></div>
+      </div>
+      <div class="noise">
+        <div class="noise-label">NOISE</div>
+        <div class="noise-track"><div class="noise-fill" id="noise-fill"></div></div>
+      </div>
+      <div class="hud-right">
+        <div class="timer" id="timer">0.0</div>
+        <button id="btn-mute" class="icon-btn" aria-label="Sound">🔊</button>
+      </div>
+    </div>
+
+    <div id="hint"></div>
+    <div id="hold-pad" class="hidden"><span>HOLD TO SNEAK</span></div>
+    <div id="flash"></div>
+    <div id="vignette"></div>
+
+    <section id="screen-title" class="screen">
+      <div class="card">
+        <h1>DON'T<br />WAKE<br /><span>DAD</span></h1>
+        <p class="tag">Get the snack. Dodge the slipper.</p>
+        <button id="btn-play" class="big-btn">PLAY</button>
+        <div class="levels" id="level-grid"></div>
+        <p class="how">Hold anywhere to sneak. Let go when the snoring stops.</p>
+      </div>
+    </section>
+
+    <section id="screen-intro" class="screen hidden">
+      <div class="intro">
+        <div class="intro-num" id="intro-num"></div>
+        <div class="intro-name" id="intro-name"></div>
+        <div class="intro-sub" id="intro-sub"></div>
+      </div>
+    </section>
+
+    <section id="screen-caught" class="screen hidden">
+      <div class="card caught">
+        <div class="stamp">CAUGHT</div>
+        <p class="line" id="caught-line"></p>
+        <button id="btn-retry" class="big-btn">TRY AGAIN</button>
+        <button id="btn-caught-menu" class="small-btn">Levels</button>
+      </div>
+    </section>
+
+    <section id="screen-win" class="screen hidden">
+      <div class="card win">
+        <div class="stamp good" id="win-title">SNACK SECURED</div>
+        <div class="stars" id="win-stars"></div>
+        <p class="line" id="win-line"></p>
+        <button id="btn-next" class="big-btn">NEXT</button>
+        <button id="btn-win-retry" class="small-btn">Play again</button>
+      </div>
+    </section>
+
+    <div id="rotate" class="hidden">
+      <div class="phone"></div>
+      <p class="rotate-title">Turn your phone sideways</p>
+      <p class="rotate-sub">Dad is easier to watch on a wide screen.</p>
+    </div>
+
+    <div id="loading">Loading the house...</div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
